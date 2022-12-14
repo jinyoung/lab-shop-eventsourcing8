@@ -1,13 +1,11 @@
 package labshopeventsourcing.domain;
 
-import labshopeventsourcing.domain.*;
 import labshopeventsourcing.infra.AbstractEvent;
+import lombok.Data;
 import java.util.*;
-import lombok.*;
 
 
 @Data
-@ToString
 public class OrderPlaced extends AbstractEvent {
 
     private Long id;
@@ -17,11 +15,4 @@ public class OrderPlaced extends AbstractEvent {
     private Double amount;
     private String status;
     private String address;
-
-    public OrderPlaced(Order aggregate){
-        super(aggregate);
-    }
-    public OrderPlaced(){
-        super();
-    }
 }

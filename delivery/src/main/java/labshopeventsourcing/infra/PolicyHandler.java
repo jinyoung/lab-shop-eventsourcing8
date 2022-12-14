@@ -32,6 +32,8 @@ public class PolicyHandler{
         
 
         // Sample Logic //
+        Delivery.addToDeliveryList(event);
+        
 
         
 

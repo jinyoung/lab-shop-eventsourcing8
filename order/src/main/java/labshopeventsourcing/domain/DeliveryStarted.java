@@ -1,11 +1,11 @@
 package labshopeventsourcing.domain;
 
-import labshopeventsourcing.domain.*;
 import labshopeventsourcing.infra.AbstractEvent;
-import lombok.*;
+import lombok.Data;
 import java.util.*;
+
+
 @Data
-@ToString
 public class DeliveryStarted extends AbstractEvent {
 
     private Long id;
@@ -14,5 +14,3 @@ public class DeliveryStarted extends AbstractEvent {
     private Integer quantity;
     private Long orderId;
 }
-
-
